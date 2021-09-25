@@ -14,7 +14,7 @@ agent any
 		stage('pwd com') {
             steps {
 			sh "pwd"
-			sh "cd spring-petclinic"
+			sh "cd .."
 			sh "pwd"
 			
             }
