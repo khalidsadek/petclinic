@@ -2,7 +2,7 @@ pipeline {
 
 
 
-agent slave
+agent any
 
     stages {
       
