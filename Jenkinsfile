@@ -1,7 +1,6 @@
 pipeline {
 
 
-
 agent any
 
     stages {
@@ -20,7 +19,7 @@ agent any
             }
         }
     
-	stage('mvnw') {
+		stage('mvnw') {
             script{
                 "./mvnw package"
              }
