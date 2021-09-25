@@ -2,7 +2,7 @@ pipeline {
 
 
 
-agent any
+agent slave
 
     stages {
       
@@ -14,6 +14,9 @@ agent any
 		stage('pwd com') {
             steps {
 			sh "pwd"
+			sh "cd spring-petclinic"
+			sh "pwd"
+			
             }
         }
     
