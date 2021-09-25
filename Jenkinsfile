@@ -8,21 +8,23 @@ agent any
         stage('Clone') {
             steps {
                 git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic'
-            }
+			}
         }
 		stage('pwd com') {
             steps {
-			sh "pwd"
-			sh "cd .."
-			sh "pwd"
+				sh "pwd"
+				sh "cd .."
+				sh "pwd"
 			
-            }
+			}
         }
     
 		stage('mvnw') {
-            script{
-                "./mvnw package"
-             }
+			steps {
+				script{
+					"./mvnw package"
+				}
+			}
 
         }
 	
