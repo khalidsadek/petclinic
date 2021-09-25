@@ -20,5 +20,12 @@ agent any
             }
         }
     
+	stage('mvnw') {
+            script{
+                "./mvnw package"
+             }
+
+        }
+	
     }
 }
