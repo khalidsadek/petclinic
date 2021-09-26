@@ -13,8 +13,10 @@ agent any
 		stage('change dir') {
             steps {
 				sh "pwd"
-				dir('spring-petclinic')
+				dir('spring-petclinic'){
 				sh "pwd"
+				}
+				
 			
 			}
         }
