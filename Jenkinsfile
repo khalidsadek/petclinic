@@ -10,10 +10,10 @@ agent any
                 git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic'
 			}
         }
-		stage('pwd com') {
+		stage('change dir') {
             steps {
 				sh "pwd"
-				sh "cd .."
+				dir('spring-petclinic')
 				sh "pwd"
 			
 			}
